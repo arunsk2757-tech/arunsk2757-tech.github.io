@@ -1,0 +1,520 @@
+{
+ "bluecrescent": [
+  {
+   "label": "Home page, screen by screen",
+   "thumb": "media/g/bluecrescent/home_t.webp",
+   "parts": [
+    "media/g/bluecrescent/home-01.webp",
+    "media/g/bluecrescent/home-02.webp",
+    "media/g/bluecrescent/home-03.webp",
+    "media/g/bluecrescent/home-04.webp",
+    "media/g/bluecrescent/home-05.webp",
+    "media/g/bluecrescent/home-06.webp",
+    "media/g/bluecrescent/home-07.webp",
+    "media/g/bluecrescent/home-08.webp",
+    "media/g/bluecrescent/home-09.webp",
+    "media/g/bluecrescent/home-10.webp",
+    "media/g/bluecrescent/home-11.webp",
+    "media/g/bluecrescent/home-12.webp",
+    "media/g/bluecrescent/home-13.webp",
+    "media/g/bluecrescent/home-14.webp",
+    "media/g/bluecrescent/home-15.webp",
+    "media/g/bluecrescent/home-16.webp",
+    "media/g/bluecrescent/home-17.webp",
+    "media/g/bluecrescent/home-18.webp"
+   ],
+   "mobile": false,
+   "screens": true
+  },
+  {
+   "label": "Expertise page",
+   "thumb": "media/g/bluecrescent/expertise_t.webp",
+   "parts": [
+    "media/g/bluecrescent/expertise-01.webp",
+    "media/g/bluecrescent/expertise-02.webp",
+    "media/g/bluecrescent/expertise-03.webp",
+    "media/g/bluecrescent/expertise-04.webp",
+    "media/g/bluecrescent/expertise-05.webp",
+    "media/g/bluecrescent/expertise-06.webp",
+    "media/g/bluecrescent/expertise-07.webp",
+    "media/g/bluecrescent/expertise-08.webp",
+    "media/g/bluecrescent/expertise-09.webp",
+    "media/g/bluecrescent/expertise-10.webp",
+    "media/g/bluecrescent/expertise-11.webp",
+    "media/g/bluecrescent/expertise-12.webp",
+    "media/g/bluecrescent/expertise-13.webp",
+    "media/g/bluecrescent/expertise-14.webp",
+    "media/g/bluecrescent/expertise-15.webp"
+   ],
+   "mobile": false,
+   "screens": true
+  },
+  {
+   "label": "Projects + a project page",
+   "thumb": "media/g/bluecrescent/projects_t.webp",
+   "parts": [
+    "media/g/bluecrescent/projects-01.webp",
+    "media/g/bluecrescent/projects-02.webp",
+    "media/g/bluecrescent/projects-03.webp",
+    "media/g/bluecrescent/projects-04.webp",
+    "media/g/bluecrescent/projects-05.webp"
+   ],
+   "mobile": false,
+   "screens": true
+  },
+  {
+   "label": "Insights + an article",
+   "thumb": "media/g/bluecrescent/insights_t.webp",
+   "parts": [
+    "media/g/bluecrescent/insights-01.webp",
+    "media/g/bluecrescent/insights-02.webp",
+    "media/g/bluecrescent/insights-03.webp",
+    "media/g/bluecrescent/insights-04.webp",
+    "media/g/bluecrescent/insights-05.webp"
+   ],
+   "mobile": false,
+   "screens": true
+  },
+  {
+   "label": "Phone: home",
+   "thumb": "media/g/bluecrescent/phone_t.webp",
+   "parts": [
+    "media/g/bluecrescent/phone-01.webp",
+    "media/g/bluecrescent/phone-02.webp",
+    "media/g/bluecrescent/phone-03.webp",
+    "media/g/bluecrescent/phone-04.webp",
+    "media/g/bluecrescent/phone-05.webp",
+    "media/g/bluecrescent/phone-06.webp",
+    "media/g/bluecrescent/phone-07.webp",
+    "media/g/bluecrescent/phone-08.webp",
+    "media/g/bluecrescent/phone-09.webp",
+    "media/g/bluecrescent/phone-10.webp",
+    "media/g/bluecrescent/phone-11.webp",
+    "media/g/bluecrescent/phone-12.webp",
+    "media/g/bluecrescent/phone-13.webp",
+    "media/g/bluecrescent/phone-14.webp",
+    "media/g/bluecrescent/phone-15.webp",
+    "media/g/bluecrescent/phone-16.webp",
+    "media/g/bluecrescent/phone-17.webp",
+    "media/g/bluecrescent/phone-18.webp",
+    "media/g/bluecrescent/phone-19.webp",
+    "media/g/bluecrescent/phone-20.webp",
+    "media/g/bluecrescent/phone-21.webp",
+    "media/g/bluecrescent/phone-22.webp"
+   ],
+   "mobile": true,
+   "screens": true
+  },
+  {
+   "label": "Phone: expertise",
+   "thumb": "media/g/bluecrescent/phone-exp_t.webp",
+   "parts": [
+    "media/g/bluecrescent/phone-exp-01.webp",
+    "media/g/bluecrescent/phone-exp-02.webp",
+    "media/g/bluecrescent/phone-exp-03.webp",
+    "media/g/bluecrescent/phone-exp-04.webp",
+    "media/g/bluecrescent/phone-exp-05.webp",
+    "media/g/bluecrescent/phone-exp-06.webp",
+    "media/g/bluecrescent/phone-exp-07.webp",
+    "media/g/bluecrescent/phone-exp-08.webp",
+    "media/g/bluecrescent/phone-exp-09.webp",
+    "media/g/bluecrescent/phone-exp-10.webp",
+    "media/g/bluecrescent/phone-exp-11.webp",
+    "media/g/bluecrescent/phone-exp-12.webp",
+    "media/g/bluecrescent/phone-exp-13.webp"
+   ],
+   "mobile": true,
+   "screens": true
+  },
+  {
+   "label": "Phone: projects",
+   "thumb": "media/g/bluecrescent/phone-proj_t.webp",
+   "parts": [
+    "media/g/bluecrescent/phone-proj-01.webp",
+    "media/g/bluecrescent/phone-proj-02.webp",
+    "media/g/bluecrescent/phone-proj-03.webp",
+    "media/g/bluecrescent/phone-proj-04.webp",
+    "media/g/bluecrescent/phone-proj-05.webp",
+    "media/g/bluecrescent/phone-proj-06.webp",
+    "media/g/bluecrescent/phone-proj-07.webp",
+    "media/g/bluecrescent/phone-proj-08.webp",
+    "media/g/bluecrescent/phone-proj-09.webp",
+    "media/g/bluecrescent/phone-proj-10.webp",
+    "media/g/bluecrescent/phone-proj-11.webp"
+   ],
+   "mobile": true,
+   "screens": true
+  },
+  {
+   "label": "Phone: insights",
+   "thumb": "media/g/bluecrescent/phone-ins_t.webp",
+   "parts": [
+    "media/g/bluecrescent/phone-ins-01.webp",
+    "media/g/bluecrescent/phone-ins-02.webp",
+    "media/g/bluecrescent/phone-ins-03.webp",
+    "media/g/bluecrescent/phone-ins-04.webp",
+    "media/g/bluecrescent/phone-ins-05.webp",
+    "media/g/bluecrescent/phone-ins-06.webp",
+    "media/g/bluecrescent/phone-ins-07.webp"
+   ],
+   "mobile": true,
+   "screens": true
+  }
+ ],
+ "myindialiving": [
+  {
+   "label": "Home",
+   "thumb": "media/g/myindialiving/home_t.webp",
+   "parts": [
+    "media/g/myindialiving/home-1.webp",
+    "media/g/myindialiving/home-2.webp"
+   ],
+   "mobile": false
+  },
+  {
+   "label": "Business page",
+   "thumb": "media/g/myindialiving/business_t.webp",
+   "parts": [
+    "media/g/myindialiving/business-1.webp"
+   ],
+   "mobile": false
+  },
+  {
+   "label": "Phone: home",
+   "thumb": "media/g/myindialiving/home-m_t.webp",
+   "parts": [
+    "media/g/myindialiving/home-m-1.webp",
+    "media/g/myindialiving/home-m-2.webp",
+    "media/g/myindialiving/home-m-3.webp",
+    "media/g/myindialiving/home-m-4.webp"
+   ],
+   "mobile": true
+  },
+  {
+   "label": "Phone: business page",
+   "thumb": "media/g/myindialiving/business-m_t.webp",
+   "parts": [
+    "media/g/myindialiving/business-m-1.webp",
+    "media/g/myindialiving/business-m-2.webp"
+   ],
+   "mobile": true
+  }
+ ],
+ "tunechapter": [
+  {
+   "label": "Home",
+   "thumb": "media/g/tunechapter/home_t.webp",
+   "parts": [
+    "media/g/tunechapter/home-01.webp",
+    "media/g/tunechapter/home-02.webp",
+    "media/g/tunechapter/home-03.webp",
+    "media/g/tunechapter/home-04.webp",
+    "media/g/tunechapter/home-05.webp",
+    "media/g/tunechapter/home-06.webp",
+    "media/g/tunechapter/home-07.webp",
+    "media/g/tunechapter/home-08.webp",
+    "media/g/tunechapter/home-09.webp",
+    "media/g/tunechapter/home-10.webp",
+    "media/g/tunechapter/home-11.webp",
+    "media/g/tunechapter/home-12.webp",
+    "media/g/tunechapter/home-13.webp",
+    "media/g/tunechapter/home-14.webp",
+    "media/g/tunechapter/home-15.webp",
+    "media/g/tunechapter/home-16.webp",
+    "media/g/tunechapter/home-17.webp",
+    "media/g/tunechapter/home-18.webp"
+   ],
+   "mobile": false,
+   "screens": true
+  },
+  {
+   "label": "Tuition",
+   "thumb": "media/g/tunechapter/tuition_t.webp",
+   "parts": [
+    "media/g/tunechapter/tuition-01.webp",
+    "media/g/tunechapter/tuition-02.webp",
+    "media/g/tunechapter/tuition-03.webp",
+    "media/g/tunechapter/tuition-04.webp",
+    "media/g/tunechapter/tuition-05.webp",
+    "media/g/tunechapter/tuition-06.webp",
+    "media/g/tunechapter/tuition-07.webp",
+    "media/g/tunechapter/tuition-08.webp",
+    "media/g/tunechapter/tuition-09.webp",
+    "media/g/tunechapter/tuition-10.webp",
+    "media/g/tunechapter/tuition-11.webp"
+   ],
+   "mobile": false,
+   "screens": true
+  },
+  {
+   "label": "Arts",
+   "thumb": "media/g/tunechapter/arts_t.webp",
+   "parts": [
+    "media/g/tunechapter/arts-01.webp",
+    "media/g/tunechapter/arts-02.webp",
+    "media/g/tunechapter/arts-03.webp",
+    "media/g/tunechapter/arts-04.webp",
+    "media/g/tunechapter/arts-05.webp",
+    "media/g/tunechapter/arts-06.webp",
+    "media/g/tunechapter/arts-07.webp",
+    "media/g/tunechapter/arts-08.webp",
+    "media/g/tunechapter/arts-09.webp"
+   ],
+   "mobile": false,
+   "screens": true
+  },
+  {
+   "label": "Skill Lab",
+   "thumb": "media/g/tunechapter/skills_t.webp",
+   "parts": [
+    "media/g/tunechapter/skills-01.webp",
+    "media/g/tunechapter/skills-02.webp",
+    "media/g/tunechapter/skills-03.webp",
+    "media/g/tunechapter/skills-04.webp",
+    "media/g/tunechapter/skills-05.webp",
+    "media/g/tunechapter/skills-06.webp",
+    "media/g/tunechapter/skills-07.webp",
+    "media/g/tunechapter/skills-08.webp",
+    "media/g/tunechapter/skills-09.webp",
+    "media/g/tunechapter/skills-10.webp"
+   ],
+   "mobile": false,
+   "screens": true
+  },
+  {
+   "label": "Teach with us",
+   "thumb": "media/g/tunechapter/teachers_t.webp",
+   "parts": [
+    "media/g/tunechapter/teachers-01.webp",
+    "media/g/tunechapter/teachers-02.webp",
+    "media/g/tunechapter/teachers-03.webp",
+    "media/g/tunechapter/teachers-04.webp",
+    "media/g/tunechapter/teachers-05.webp",
+    "media/g/tunechapter/teachers-06.webp",
+    "media/g/tunechapter/teachers-07.webp",
+    "media/g/tunechapter/teachers-08.webp",
+    "media/g/tunechapter/teachers-09.webp",
+    "media/g/tunechapter/teachers-10.webp"
+   ],
+   "mobile": false,
+   "screens": true
+  },
+  {
+   "label": "Find a teacher",
+   "thumb": "media/g/tunechapter/tlist_t.webp",
+   "parts": [
+    "media/g/tunechapter/tlist-1.webp"
+   ],
+   "mobile": false
+  },
+  {
+   "label": "All courses",
+   "thumb": "media/g/tunechapter/clist_t.webp",
+   "parts": [
+    "media/g/tunechapter/clist-1.webp"
+   ],
+   "mobile": false
+  },
+  {
+   "label": "Phone: home",
+   "thumb": "media/g/tunechapter/phone_t.webp",
+   "parts": [
+    "media/g/tunechapter/phone-01.webp",
+    "media/g/tunechapter/phone-02.webp",
+    "media/g/tunechapter/phone-03.webp",
+    "media/g/tunechapter/phone-04.webp",
+    "media/g/tunechapter/phone-05.webp",
+    "media/g/tunechapter/phone-06.webp",
+    "media/g/tunechapter/phone-07.webp",
+    "media/g/tunechapter/phone-08.webp",
+    "media/g/tunechapter/phone-09.webp",
+    "media/g/tunechapter/phone-10.webp",
+    "media/g/tunechapter/phone-11.webp",
+    "media/g/tunechapter/phone-12.webp",
+    "media/g/tunechapter/phone-13.webp",
+    "media/g/tunechapter/phone-14.webp",
+    "media/g/tunechapter/phone-15.webp",
+    "media/g/tunechapter/phone-16.webp",
+    "media/g/tunechapter/phone-17.webp",
+    "media/g/tunechapter/phone-18.webp",
+    "media/g/tunechapter/phone-19.webp",
+    "media/g/tunechapter/phone-20.webp",
+    "media/g/tunechapter/phone-21.webp",
+    "media/g/tunechapter/phone-22.webp"
+   ],
+   "mobile": true,
+   "screens": true
+  },
+  {
+   "label": "Phone: tuition",
+   "thumb": "media/g/tunechapter/tuition-m_t.webp",
+   "parts": [
+    "media/g/tunechapter/tuition-m-01.webp",
+    "media/g/tunechapter/tuition-m-02.webp",
+    "media/g/tunechapter/tuition-m-03.webp",
+    "media/g/tunechapter/tuition-m-04.webp",
+    "media/g/tunechapter/tuition-m-05.webp",
+    "media/g/tunechapter/tuition-m-06.webp",
+    "media/g/tunechapter/tuition-m-07.webp",
+    "media/g/tunechapter/tuition-m-08.webp",
+    "media/g/tunechapter/tuition-m-09.webp",
+    "media/g/tunechapter/tuition-m-10.webp",
+    "media/g/tunechapter/tuition-m-11.webp",
+    "media/g/tunechapter/tuition-m-12.webp"
+   ],
+   "mobile": true,
+   "screens": true
+  },
+  {
+   "label": "Phone: arts",
+   "thumb": "media/g/tunechapter/arts-m_t.webp",
+   "parts": [
+    "media/g/tunechapter/arts-m-01.webp",
+    "media/g/tunechapter/arts-m-02.webp",
+    "media/g/tunechapter/arts-m-03.webp",
+    "media/g/tunechapter/arts-m-04.webp",
+    "media/g/tunechapter/arts-m-05.webp",
+    "media/g/tunechapter/arts-m-06.webp",
+    "media/g/tunechapter/arts-m-07.webp",
+    "media/g/tunechapter/arts-m-08.webp",
+    "media/g/tunechapter/arts-m-09.webp",
+    "media/g/tunechapter/arts-m-10.webp",
+    "media/g/tunechapter/arts-m-11.webp",
+    "media/g/tunechapter/arts-m-12.webp",
+    "media/g/tunechapter/arts-m-13.webp",
+    "media/g/tunechapter/arts-m-14.webp"
+   ],
+   "mobile": true,
+   "screens": true
+  },
+  {
+   "label": "Phone: Skill Lab",
+   "thumb": "media/g/tunechapter/skills-m_t.webp",
+   "parts": [
+    "media/g/tunechapter/skills-m-01.webp",
+    "media/g/tunechapter/skills-m-02.webp",
+    "media/g/tunechapter/skills-m-03.webp",
+    "media/g/tunechapter/skills-m-04.webp",
+    "media/g/tunechapter/skills-m-05.webp",
+    "media/g/tunechapter/skills-m-06.webp",
+    "media/g/tunechapter/skills-m-07.webp",
+    "media/g/tunechapter/skills-m-08.webp",
+    "media/g/tunechapter/skills-m-09.webp",
+    "media/g/tunechapter/skills-m-10.webp",
+    "media/g/tunechapter/skills-m-11.webp",
+    "media/g/tunechapter/skills-m-12.webp",
+    "media/g/tunechapter/skills-m-13.webp",
+    "media/g/tunechapter/skills-m-14.webp",
+    "media/g/tunechapter/skills-m-15.webp",
+    "media/g/tunechapter/skills-m-16.webp"
+   ],
+   "mobile": true,
+   "screens": true
+  },
+  {
+   "label": "Phone: teach with us",
+   "thumb": "media/g/tunechapter/teachers-m_t.webp",
+   "parts": [
+    "media/g/tunechapter/teachers-m-01.webp",
+    "media/g/tunechapter/teachers-m-02.webp",
+    "media/g/tunechapter/teachers-m-03.webp",
+    "media/g/tunechapter/teachers-m-04.webp",
+    "media/g/tunechapter/teachers-m-05.webp",
+    "media/g/tunechapter/teachers-m-06.webp",
+    "media/g/tunechapter/teachers-m-07.webp",
+    "media/g/tunechapter/teachers-m-08.webp",
+    "media/g/tunechapter/teachers-m-09.webp",
+    "media/g/tunechapter/teachers-m-10.webp",
+    "media/g/tunechapter/teachers-m-11.webp",
+    "media/g/tunechapter/teachers-m-12.webp",
+    "media/g/tunechapter/teachers-m-13.webp",
+    "media/g/tunechapter/teachers-m-14.webp",
+    "media/g/tunechapter/teachers-m-15.webp"
+   ],
+   "mobile": true,
+   "screens": true
+  },
+  {
+   "label": "Phone: find a teacher",
+   "thumb": "media/g/tunechapter/tlist-m_t.webp",
+   "parts": [
+    "media/g/tunechapter/tlist-m-01.webp",
+    "media/g/tunechapter/tlist-m-02.webp",
+    "media/g/tunechapter/tlist-m-03.webp",
+    "media/g/tunechapter/tlist-m-04.webp",
+    "media/g/tunechapter/tlist-m-05.webp",
+    "media/g/tunechapter/tlist-m-06.webp",
+    "media/g/tunechapter/tlist-m-07.webp",
+    "media/g/tunechapter/tlist-m-08.webp",
+    "media/g/tunechapter/tlist-m-09.webp",
+    "media/g/tunechapter/tlist-m-10.webp",
+    "media/g/tunechapter/tlist-m-11.webp",
+    "media/g/tunechapter/tlist-m-12.webp",
+    "media/g/tunechapter/tlist-m-13.webp",
+    "media/g/tunechapter/tlist-m-14.webp"
+   ],
+   "mobile": true,
+   "screens": true
+  },
+  {
+   "label": "Phone: all courses",
+   "thumb": "media/g/tunechapter/clist-m_t.webp",
+   "parts": [
+    "media/g/tunechapter/clist-m-01.webp",
+    "media/g/tunechapter/clist-m-02.webp",
+    "media/g/tunechapter/clist-m-03.webp",
+    "media/g/tunechapter/clist-m-04.webp",
+    "media/g/tunechapter/clist-m-05.webp",
+    "media/g/tunechapter/clist-m-06.webp",
+    "media/g/tunechapter/clist-m-07.webp",
+    "media/g/tunechapter/clist-m-08.webp",
+    "media/g/tunechapter/clist-m-09.webp",
+    "media/g/tunechapter/clist-m-10.webp"
+   ],
+   "mobile": true,
+   "screens": true
+  }
+ ],
+ "yeskay": [
+  {
+   "label": "Home",
+   "thumb": "media/g/yeskay/home_t.webp",
+   "parts": [
+    "media/g/yeskay/home-1.webp",
+    "media/g/yeskay/home-2.webp"
+   ],
+   "mobile": false
+  },
+  {
+   "label": "Phone",
+   "thumb": "media/g/yeskay/home-m_t.webp",
+   "parts": [
+    "media/g/yeskay/home-m-1.webp",
+    "media/g/yeskay/home-m-2.webp",
+    "media/g/yeskay/home-m-3.webp",
+    "media/g/yeskay/home-m-4.webp",
+    "media/g/yeskay/home-m-5.webp",
+    "media/g/yeskay/home-m-6.webp"
+   ],
+   "mobile": true
+  }
+ ],
+ "picitto": [
+  {
+   "label": "App, screen by screen",
+   "thumb": "media/g/picitto/app_t.webp",
+   "parts": [
+    "media/g/picitto/app-01.webp",
+    "media/g/picitto/app-02.webp",
+    "media/g/picitto/app-03.webp",
+    "media/g/picitto/app-04.webp",
+    "media/g/picitto/app-05.webp",
+    "media/g/picitto/app-06.webp",
+    "media/g/picitto/app-07.webp",
+    "media/g/picitto/app-08.webp"
+   ],
+   "mobile": true,
+   "screens": true
+  }
+ ]
+}

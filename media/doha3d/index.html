@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Doha in 3D — Arun S Kumar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@300;400;500;600&family=Noto+Naskh+Arabic:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root { --blue:#0066b3; --cyan:#00aeef; --sky:#35a9e8; --navy:#031b2e; --ink:#eaf6ff;
+          --glass:rgba(3,27,46,.66); --line:rgba(0,174,239,.32); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { background:var(--navy); color:var(--ink); font-family:Inter,system-ui,sans-serif; }
+  body.embed { overflow:hidden; height:100%; }
+  #scene { position:fixed; inset:0; width:100vw; height:100vh; display:block; }
+  #scroll { position:relative; z-index:1; pointer-events:none; }
+  #scroll section { height:130vh; }
+
+  .card { position:fixed; top:50%; z-index:3; width:min(400px,86vw); padding:26px 30px;
+          border-radius:14px; background:var(--glass); backdrop-filter:blur(12px) saturate(1.2);
+          border:1px solid var(--line); box-shadow:0 22px 60px rgba(0,20,40,.35);
+          opacity:0; pointer-events:none; will-change:transform,opacity; }
+  .card.left  { left:5vw; }  .card.right { right:5vw; }
+  .card .kicker { font-size:.68rem; letter-spacing:.26em; color:var(--cyan); text-transform:uppercase; font-weight:600; }
+  .card h2 { font-family:Manrope,Inter,sans-serif; font-weight:800; font-size:2.1rem; line-height:1.05; letter-spacing:-.03em; margin:.45rem 0 .2rem; }
+  .card .ar { font-family:'Noto Naskh Arabic',serif; font-size:1.15rem; color:#9fdcf7; direction:rtl; margin-bottom:.7rem; }
+  .card p { font-size:.93rem; line-height:1.62; color:#d6e9f5; font-weight:300; }
+  .card ul { list-style:none; margin-top:.9rem; display:flex; flex-wrap:wrap; gap:7px; }
+  .card li { font-size:.72rem; padding:5px 10px; border-radius:999px; background:rgba(0,174,239,.12); border:1px solid rgba(0,174,239,.35); }
+
+  #nav { position:fixed; right:20px; top:50%; transform:translateY(-50%); z-index:4; display:flex; flex-direction:column; gap:9px; }
+  #nav button { all:unset; cursor:pointer; display:flex; align-items:center; justify-content:flex-end; gap:10px; }
+  #nav .dot { width:8px; height:8px; border-radius:50%; background:rgba(234,246,255,.35); transition:all .3s; }
+  #nav .lbl { font-size:.7rem; letter-spacing:.08em; opacity:0; transform:translateX(6px); transition:all .25s; white-space:nowrap; text-shadow:0 1px 6px rgba(0,0,0,.6); }
+  #nav button:hover .lbl, #nav button.on .lbl { opacity:1; transform:none; }
+  #nav button.on .dot { background:var(--cyan); transform:scale(1.5); box-shadow:0 0 10px rgba(0,174,239,.7); }
+  body.embed #nav { display:none; }
+
+  #mode { position:fixed; top:16px; left:16px; z-index:6; display:flex; padding:4px; border-radius:999px;
+          background:rgba(3,27,46,.6); backdrop-filter:blur(8px); border:1px solid var(--line); }
+  #mode button { all:unset; cursor:pointer; padding:7px 13px; border-radius:999px; font-size:.74rem; font-weight:500; letter-spacing:.03em; transition:all .3s; }
+  #mode button.on { background:var(--blue); color:#fff; }
+
+  #topright { position:fixed; top:16px; right:16px; z-index:6; display:flex; gap:8px; }
+  .pill { all:unset; cursor:pointer; padding:8px 14px; border-radius:999px; font-size:.72rem; font-weight:600; letter-spacing:.06em;
+          background:rgba(3,27,46,.6); backdrop-filter:blur(8px); border:1px solid var(--line); color:var(--ink); transition:background .25s; }
+  .pill:hover { background:var(--blue); }
+  .pill.on { background:var(--blue); }
+
+  /* embed controls: sector chips + arrows */
+  #dock { position:fixed; left:50%; bottom:16px; transform:translateX(-50%); z-index:6; display:none; align-items:center; gap:10px;
+          max-width:calc(100% - 24px); padding:6px; border-radius:14px; background:rgba(3,27,46,.66); backdrop-filter:blur(10px); border:1px solid var(--line); }
+  body.embed #dock { display:flex; }
+  #dock .arrow { all:unset; cursor:pointer; width:36px; height:36px; border-radius:10px; display:grid; place-items:center; font-size:1rem; background:rgba(0,102,179,.55); flex:none; }
+  #dock .arrow:hover { background:var(--blue); }
+  #chips { display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; }
+  #chips::-webkit-scrollbar { display:none; }
+  #chips button { all:unset; cursor:pointer; white-space:nowrap; padding:9px 12px; border-radius:9px; font-size:.72rem; font-weight:600; letter-spacing:.05em; color:#bcd7e8; transition:all .25s; }
+  #chips button:hover { color:#fff; background:rgba(0,174,239,.14); }
+  #chips button.on { color:#fff; background:var(--blue); }
+  #counter { font-size:.7rem; color:#9fbcd0; padding:0 6px; white-space:nowrap; flex:none; }
+
+  #tip { position:fixed; z-index:7; pointer-events:none; padding:7px 12px; border-radius:8px; font-size:.78rem;
+         background:rgba(3,27,46,.85); border:1px solid var(--line); opacity:0; transition:opacity .15s; }
+  #progress { position:fixed; left:0; top:0; height:3px; z-index:7; background:linear-gradient(90deg,var(--blue),var(--cyan)); width:0; }
+  body.embed #progress { display:none; }
+  #hint { position:fixed; bottom:26px; left:50%; transform:translateX(-50%); z-index:3; font-size:.72rem; letter-spacing:.28em; opacity:.85; transition:opacity .6s; text-shadow:0 1px 6px rgba(0,0,0,.6); white-space:nowrap; }
+  body.embed #hint { bottom:78px; }
+  #loader { position:fixed; inset:0; z-index:10; display:flex; flex-direction:column; align-items:center; justify-content:center; background:var(--navy); transition:opacity 1s; }
+  #loader h1 { font-family:Manrope,sans-serif; font-weight:800; font-size:2.3rem; letter-spacing:.12em; }
+  #loader h1 span { color:var(--cyan); }
+  #loader .bar { width:240px; height:2px; background:#0d3350; margin-top:18px; overflow:hidden; }
+  #loader .fill { height:100%; width:0; background:var(--cyan); transition:width .2s; }
+  #loader small { margin-top:10px; opacity:.65; font-size:.74rem; }
+  #note { position:fixed; left:16px; bottom:16px; z-index:5; font-size:.66rem; color:#8fb1c6; letter-spacing:.04em; }
+  body.embed #note { display:none; }
+  @media (max-width:760px){
+    .card{ left:4vw!important; right:auto!important; top:40%; width:92vw; padding:18px 20px; }
+    .card h2{ font-size:1.6rem } .card p{ font-size:.85rem } #nav .lbl{display:none}
+    #mode button{padding:6px 9px;font-size:.66rem} #topright .pill{padding:7px 10px;font-size:.64rem}
+    body.embed .card ul { display:none; }
+  }
+</style>
+</head>
+<body>
+<div id="loader"><h1>DOHA <span>3D</span></h1><div class="bar"><div class="fill" id="fill"></div></div><small id="loadtxt">Loading the city…</small></div>
+<div id="progress"></div>
+<div id="mode"><button data-m="0" class="on">☀ Golden hour</button><button data-m="1">◐ Dusk</button><button data-m="2">☾ Night</button></div>
+<div id="topright"></div>
+<canvas id="scene"></canvas>
+<div id="scroll"></div>
+<nav id="nav"></nav>
+<div id="dock"><button class="arrow" id="prevBtn" aria-label="Previous stop">←</button><div id="chips"></div><span id="counter"></span><button class="arrow" id="nextBtn" aria-label="Next stop">→</button></div>
+<div id="tip"></div>
+<div id="hint">SCROLL TO EXPLORE</div>
+<div id="note">Illustrative model — landmarks simplified, not to scale.</div>
+
+<script type="module" src="doha.js"></script>
+
+</body>
+</html>
